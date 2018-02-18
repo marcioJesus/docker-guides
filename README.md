@@ -5,7 +5,7 @@ Estrutura docker-compose para cada tipo de projeto
 Feito para projeto Rails e database Postgres
 
 ### Passos Iniciais
-* Baixe o conteúdo dentro da pasta rails-development
+* Baixe o conteúdo dentro da pasta [rails-development](https://github.com/marcioJesus/docker-guides/tree/master/rails-development)
 * Crie uma pasta com nome 'database' no mesmo local onde se encontra o arquivo docker-compose.yml
 * Copie seu projeto para dentro da pasta 'app'
 * Altere o arquivo 'database.yml' de seu projeto
