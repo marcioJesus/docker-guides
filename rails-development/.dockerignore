@@ -1,2 +1,2 @@
-app/Dockerfile
+rails_app/Dockerfile
 docker-compose.yml

@@ -1,0 +1,4 @@
+docker-compose.yml
+rails_app/.env
+rails_app/Dockerfile
+nginx/Dockerfile

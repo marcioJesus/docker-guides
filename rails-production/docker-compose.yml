@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  web:
+    image: nginx
+    build: ./nginx
+    depends_on:
+     - app
+    ports:
+    - 80:80
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - /postgres:/var/lib/postgresql/data
+    ports:
+      - 5432
+  app:
+    build: ./rails_app # dockerfile and source code in path /rails_app
+    volumes:
+      - ./rails_app:/rails_app
+    environment:
+      - RAILS_ENV=${RAILS_ENV}
+     links:
+      - db #host in archive database.yml
+    depends_on:
+      - db
+    # necessary for use byebug
+    stdin_open: true
+    tty: true

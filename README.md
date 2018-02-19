@@ -1,13 +1,18 @@
 # Guias de projetos com Docker-Compose
 Estrutura docker-compose para cada tipo de projeto
 
-## Rails-Development
-Feito para projeto Rails e database Postgres
+## Projetos
+### Rails-Development
+Feito para projeto Rails e Postgres
+* Baixe o conteúdo dentro da pasta [rails-development](https://github.com/marcioJesus/docker-guides/tree/master/rails-development)
+
+### Rails-Production
+Feito para projeto NGIX, Rails e Postgres
+* Baixe o conteúdo dentro da pasta [rails-production](https://github.com/marcioJesus/docker-guides/tree/master/rails-production)
 
 ### Passos Iniciais
-* Baixe o conteúdo dentro da pasta [rails-development](https://github.com/marcioJesus/docker-guides/tree/master/rails-development)
-* Crie uma pasta com nome 'database' no mesmo local onde se encontra o arquivo docker-compose.yml
-* Copie seu projeto para dentro da pasta 'app'
+* Crie uma pasta com nome 'postgres' no mesmo local onde se encontra o arquivo docker-compose.yml
+* Copie seu projeto para dentro da pasta 'rails_app'
 * Altere o arquivo 'database.yml' de seu projeto
 ```
 adapter: postgresql
